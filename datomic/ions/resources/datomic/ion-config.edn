@@ -1,0 +1,4 @@
+{:allow       []
+ :http-direct {:handler-fn http-direct-example.ion.proxy/handler}
+ :lambdas     {}
+ :app-name    "http-direct-example"}

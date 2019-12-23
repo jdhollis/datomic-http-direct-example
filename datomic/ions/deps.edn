@@ -1,0 +1,9 @@
+{:mvn/repos {"datomic-cloud"
+             {:url "s3://datomic-releases-1fc2183a/maven/releases"}}
+ :deps      {bidi                     {:mvn/version "2.1.6"}
+             org.clojure/clojure      {:mvn/version "1.10.0"}
+             com.datomic/client-cloud {:mvn/version "0.8.78"}
+             com.datomic/ion          {:mvn/version "0.9.35"}}
+ :aliases   {:dev {:extra-deps  {com.datomic/ion-dev {:mvn/version "0.9.234"}}
+                   :extra-paths ["scripts"]}}
+ :paths     ["src" "resources"]}
