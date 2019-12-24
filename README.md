@@ -1,4 +1,4 @@
-# `datomic-http-direct-example`
+# datomic-http-direct-example
 
 This is a starter template for integrating Datomic's HTTP Direct with a service using Terraform. You can read more about the approach on my site: [HTTP Direct with Datomic & Terraform](https://theconsultingcto.com/posts/http-direct-with-datomic-and-terraform/)
 

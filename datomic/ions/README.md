@@ -1,4 +1,4 @@
-# `datomic/ions`
+# datomic/ions
 
 ## Development
 
