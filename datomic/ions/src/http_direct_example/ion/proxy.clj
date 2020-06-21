@@ -1,6 +1,5 @@
 (ns http-direct-example.ion.proxy
   (:require [bidi.bidi :as bidi]
-            [clojure.string :as cs]
             [http-direct-example.ion.resource :as resource]
             [http-direct-example.ion.not-found :as not-found]))
 
@@ -13,6 +12,6 @@
   [req]
   (let [{:keys [request-method uri]} req
         route (bidi/match-route (get routes request-method)
-                                (cs/replace uri #"/datomic" ""))
+                                uri)
         handle (:handler route)]
     (handle req)))
